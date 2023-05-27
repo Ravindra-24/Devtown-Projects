@@ -8,7 +8,6 @@ body{
     background:url(./img/background) no-repeat center center fixed;
     background-size:cover;
     height: 80vh;
-    font-family: sans-serif;
 }
 
 .loader{
@@ -35,37 +34,102 @@ body{
 
 } */
 
-.heading h1{
+/* .heading h1{
     display: flex;
     justify-content: center;
     font-size: 50px;
     margin: 20px 0px;
     color: #fff;
+} */
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 60px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
 }
 
-.input-container{
+.weather-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+}
+
+.weather-icon{
+    max-width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.city{
+    font-size: 27px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    /* width: 40px; */
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.unit{
+    font-size: 14px;
+}
+/* .input-container{
     width: 500px;
     margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
-}
+} */
 
-.result{
+/* .result{
     padding: 0px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* min-width: 100px; */
-    /* max-width: 200px; */
-}
+    min-width: 100px; 
+     max-width: 200px;
+} */
 
-div.result > div{
-    margin: 10px 20px;
-}
 
-.result-head{
+/* .result-head{
     width: 100%;
     display: flex;
     justify-content: start;
@@ -73,7 +137,7 @@ div.result > div{
     font-size: 20px;
     font-style: italic;
     margin: 20px 0px;
-}
+} */
 
  svg{
     width: 50px;
@@ -94,14 +158,40 @@ div.result > div{
 }
 
 
-@media screen and (max-width:520px) {
-    .heading h1{
-        font-size: 30px;
-    }
-    
-    .input-container{
+.dashed-line{
+    border: 1px dashed #464646;
+    margin-top: 20px;
+}
+
+.other-details{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.other-details p{
+    margin: 0px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:500px) {
+    .weather{
         width: 100%;
-        padding: 0px 10px;
+        margin: 0px auto;
+    }
+    .weather h1{
+        font-size: 50px;
+    }
+    .weather h2{
+        font-size: 25px;
+    }
+    .details{
+        padding: 0px;
+    }
+    .card{
+        margin: 30px auto 0;
     }
 }
   
